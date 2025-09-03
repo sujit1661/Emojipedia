@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:navajowhite;
+}
+dl {
+    display: flex;          /* flex layout */
+    flex-wrap: wrap;        /* allow wrapping */
+    gap: 30px;              /* space between cards */
+    justify-content: flex-start; /* align cards to left */
+}
+
+.emoji-item {
+    background-color: blanchedalmond;
+    padding: 25px 30px;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row */
+    box-sizing: border-box;
+}
+
+.emoji-item:hover {
+    transform: translateY(-3px);
+}
+
+dt {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.emoji {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+dd {
+    margin-left: 3rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.header{
+    font-size: 3rem;
+    padding:15px;
+    margin-bottom:10px;
+    color: #e6710d;
+    font-weight:700;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    padding-left: 5px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-family: cursive;
+    color: #090707;
+}
